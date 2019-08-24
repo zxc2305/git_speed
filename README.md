@@ -1,8 +1,12 @@
+yum -y install bind-utils
+nslookup github.global.ssl.fastly.net
+nslookup github.com
+
 vi /etc/hosts
-151.101.184.249 http://global-ssl.fastly.net
-192.30.253.113 https://github.com
+66.220.155.14 global-ssl.fastly.net
+13.250.177.223 github.com
 
-//sudo /etc/init.d/networking restart//没找到重启网络命令//reboot吧
 
-https://www.ipaddress.com
-查看域名对应ip
+sudo /etc/init.d/network restart
+
+
